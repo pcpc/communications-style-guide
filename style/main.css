@@ -1,0 +1,260 @@
+/*------------------------------------*\
+  RESET
+\*------------------------------------*/
+body, div, dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+pre, form, fieldset, input, textarea,
+p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, dfn, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+q:before, q:after {
+  content: ''; }
+
+abbr, acronym {
+  border: 0; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/*------------------------------------*\
+  MAIN
+\*------------------------------------*/
+html {
+  background: #fff;
+  color: #333; }
+
+.hide {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  text-indent: -9999px;
+  overflow: hidden; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+* html .clearfix {
+  zoom: 1; }
+.clearfix *:first-child + html {
+  zoom: 1; }
+
+html {
+  font-family: Cambria, Georgia, "Times New Roman", Times, serif;
+  background: #f7f7f2;
+  color: #4c3120; }
+
+body {
+  line-height: 1.5; }
+  body:before {
+    content: "";
+    position: fixed;
+    background: rgba(121, 49, 30, 0.9);
+    left: 0;
+    right: 0;
+    height: 12px;
+    top: 0;
+    margin-bottom: 48px; }
+  body:after {
+    content: "";
+    position: fixed;
+    background: rgba(121, 49, 30, 0.9);
+    left: 0;
+    right: 0;
+    height: 12px;
+    bottom: 0; }
+
+.container {
+  width: 500px;
+  margin: 72px auto; }
+
+/*------------------------------------*\
+  TYPE
+\*------------------------------------*/
+/*--- PARAGRAPHS ---*/
+p {
+  margin-bottom: 18px; }
+
+strong {
+  color: #354248; }
+
+/*--- HEADINGS ---*/
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 24px;
+  font-weight: bold;
+  color: #6e200c; }
+
+h1 {
+  font-size: 1.5em;
+  /* 24px --> 24 ÷ 16 = 1.5 */
+  line-height: 1em;
+  /* 24px --> 24 ÷ 24 = 1 */ }
+
+h2 {
+  font-size: 1.375em;
+  /* 22px --> 22 ÷ 16 = 1.375 */
+  line-height: 1.0909em;
+  /* 24px --> 24 ÷ 22 = 1.090909(09) */
+  font-style: italic; }
+
+h3 {
+  font-size: 1.25em;
+  /* 20px --> 20 ÷ 16 = 1.25 */
+  line-height: 1.2em;
+  /* 24px --> 24 ÷ 20 = 1.2 */ }
+
+h4 {
+  font-size: 1.125em;
+  /* 18px --> 18 ÷ 16 = 1.125 */
+  line-height: 1.333em;
+  /* 24px --> 24 ÷ 18 = 1.3333333(3) */ }
+
+h5, h6 {
+  font-size: 1em;
+  /* 16px --> 16 ÷ 16 = 1 */
+  line-height: 1.5em;
+  /* 24px --> 24 ÷ 16 = 1.5 */ }
+
+h1#intro {
+  text-align: center;
+  text-transform: uppercase; }
+
+blockquote {
+  border-left: 1px solid #ccc;
+  color: #382315;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-style: italic;
+  background: #dfddc9; }
+
+section.intro, section.detail {
+  padding: 5px 10px; }
+
+section.detail {
+  padding: 5px 10px 5px 30px; }
+  section.detail h2 {
+    padding-top: 64px; }
+    section.detail h2:before {
+      content: "\2663";
+      margin-left: -26px;
+      margin-right: 10px;
+      color: rgba(110, 32, 12, 0.3);
+      font-size: 1.2em; }
+  section.detail:hover {
+    padding-left: 30px;
+    background-color: rgba(204, 201, 168, 0.2);
+    background-position: 0px 100px;
+    -webkit-transition: color 0.5s ease-in-out;
+    -moz-transition: color 0.5s ease-in-out;
+    -o-transition: color 0.5s linear;
+    transition: color 0.5s ease-in-out; }
+
+nav {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  margin: 8px 0 24px;
+  font-size: 0.95em; }
+  nav ul {
+    overflow: hidden;
+    list-style: none;
+    text-align: center; }
+    nav ul li {
+      display: inline-block;
+      margin-right: 8px; }
+      nav ul li:last-child {
+        margin-right: 0; }
+      nav ul li a {
+        color: #79311e;
+        font-weight: bold;
+        text-decoration: none; }
+
+.sticky #main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f9f7f3; }
+
+.sticky #main-nav ul {
+  margin: 0 auto; }
+
+.top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  width: 50px;
+  height: 25px;
+  padding-top: 25px;
+  line-height: 25px;
+  background: #854432;
+  color: #fefefe;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  behavior: url("https://dl.dropboxusercontent.com/u/70154401/communications-style-guide/public/PIE.htc"); }
+
+.top:before {
+  position: absolute;
+  top: 11px;
+  left: 14px;
+  content: "";
+  border-bottom: 11px solid #eee;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent; }
+
+.top:hover {
+  color: #eee; }
+
+.top:hover:before {
+  border-bottom-color: #eee; }
+
+.opacity .top {
+  opacity: 1;
+  -webkit-transition: opacity 700ms linear;
+  -moz-transition: opacity 700ms linear;
+  -o-transition: opacity 700ms linear;
+  transition: opacity 700ms linear; }
+
+.opacity .top.hidden {
+  opacity: 0; }
+
+.no-opacity .top.hidden {
+  display: none; }
+
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 90%;
+    margin: 72px auto;
+    padding: 0 16px; }
+
+  .sticky #main-nav ul {
+    margin: 0 16px; } }
